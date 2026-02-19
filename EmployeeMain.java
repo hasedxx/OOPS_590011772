@@ -8,19 +8,15 @@ class Employee {
     void inputData() {
         Scanner sc = new Scanner(System.in);
 
-        // Input name
         System.out.print("Enter name (max 20 characters): ");
         name = sc.nextLine();
 
-        // Input age
         System.out.print("Enter age (greater than 5): ");
         age = sc.nextInt();
 
-        // Input salary
         System.out.print("Enter salary (greater than 80000): ");
         salary = sc.nextFloat();
 
-        // Check conditions
         if (name.length() <= 20 && age > 5 && salary > 80000) {
             System.out.println("Data inserted successfully");
         } else {
@@ -29,7 +25,7 @@ class Employee {
     }
 }
 
-public class employee {
+public class EmployeeMain {
     public static void main(String[] args) {
         Employee emp = new Employee();
         emp.inputData();
